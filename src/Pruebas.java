@@ -38,5 +38,26 @@ public class Pruebas {
             System.out.println(dicc.toString());
         }
         
+
+        MapaDinamico<Integer,Integer> diccDin = new MapaDinamico<>();
+        System.out.println("Cantidad de claves = " + diccDin.largo());
+        System.out.println(diccDin.toString());
+        diccDin.agregar(10,122);
+        System.out.println("Cantidad de claves = " + diccDin.largo());
+        System.out.println(diccDin.toString());
+        diccDin.agregar(0,-10);
+        System.out.println("Cantidad de claves = " + diccDin.largo());
+        System.out.println(diccDin.toString());
+        for(int i=1; i<4;i++)
+            diccDin.agregar(i,0);
+        System.out.println(diccDin.toString());
+        System.out.println("Cantidad de claves = " + diccDin.largo());
+        System.err.println(diccDin.remover(10));
+        
+        System.out.println(diccDin.toString());
+        System.out.println("Cantidad de claves = " + diccDin.largo());
+        
+        
+
     }
 }
